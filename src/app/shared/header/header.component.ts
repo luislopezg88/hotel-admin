@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuarioService } from 'src/app/services/usuario/usuario.service';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class HeaderComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(
+    public _usuarioServer: UsuarioService
+  ) {
+   let nombreUsuario = localStorage.getItem('usuario');
+   }
 
   ngOnInit(): void {
+   
   }
+
+  
 
 }

@@ -1,0 +1,12 @@
+.formulario-hotel {
+    margin: auto;
+    padding-top: 50px;
+}
+
+.formulario-hotel .form-group .imagen-hotel {
+    width: 59%;
+}
+
+button {
+    margin-bottom: 100px;
+}

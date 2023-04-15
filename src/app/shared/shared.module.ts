@@ -5,6 +5,12 @@ import { NopagefoundComponent } from "./nopagefound/nopagefound.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
 
 
+import { PipesModule } from "../pipes/pipes.module";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+
+
+
 @NgModule({
     declarations: [
         NopagefoundComponent,
@@ -17,7 +23,13 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
         HeaderComponent,
         SidebarComponent,
         BreadcrumbsComponent,
+    ],
+    imports: [
+        PipesModule,
+        CommonModule,
+        RouterModule
     ]
+    
 })
 
 export class SharedModule {}
